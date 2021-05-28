@@ -1,0 +1,17 @@
+.attribution {
+font-size: 11px;
+text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+   box-sizing: border-box;
+   font-family: 'Spartan', sans-serif;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+} */
