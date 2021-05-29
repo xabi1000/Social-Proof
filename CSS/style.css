@@ -1,17 +1,119 @@
-.attribution {
-font-size: 11px;
-text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
+
+:root{
+    --Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Magenta: hsl(333, 88%, 67%);
+    --Soft-text-Magenta: hsl(383, 10%, 53%);
+    --Light-pink: hsl(180, 14%, 89%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
 }
 
-* {
-   box-sizing: border-box;
-   font-family: 'Spartan', sans-serif;
-}
-
-/* body {
+body {
     margin: 0;
-    padding: 0;
-} */
+    padding: 0 21px;;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;  
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+                                /* HEADER */
+.header{
+    text-align: center;
+    padding: 81px 17px 41px;
+ 
+}
+.header--title{
+    font-weight: 700;
+    color: var(--Dark-Magenta);
+}
+
+.header--text{
+    color: var(--Soft-text-Magenta);
+    font-weight: 400;
+}
+                    /* RATES  --  STARS  */
+.rates{
+    text-align: center;
+    padding: 0 17px 41px;
+}
+
+.rated{
+    background-color: var(--Light-pink);
+    margin: 19px 0;
+    padding: 11px 0;
+    border-radius: 5px;    
+}
+
+.Rated__stars{
+    background-color: #ef9546;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    clip-path: polygon(
+       50% 0%, 
+        61% 35%,
+         98% 35%,
+          68% 57%, 
+           79% 91%,
+            50% 70%,
+             21% 91%,
+              32% 57%,
+               2% 35%,
+                39% 35%
+    );
+}
+
+.rated__text{
+    color: var(--Dark-Magenta);
+}
+
+                /* TESTIMONIAL */
+
+.testimonials{
+    /* desktop */
+}
+
+.testimonial{
+    background-color: var(--Dark-Magenta);
+    border-radius: 5px;
+    padding: 21px;
+    margin-bottom: 19px;
+    height: 201px;
+}
+.testimonial__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+.testimonial__img{
+    border-radius: 50%;
+    max-width: 25%;
+}
+
+.testimonial__author{
+    margin: 0 80px 0 21px;
+    padding-top: 15px;
+    color: var(--Light-Grayish-Magenta);
+}
+.testimonial__title{
+    margin: 0;
+    font-size: 15px;
+}
+
+.textimonial__subtitle{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+.testimonial__text {
+    margin: 0;
+    color: var(--Light-Grayish-Magenta);
+    font-size: 15px;
+}
